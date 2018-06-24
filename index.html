@@ -7,7 +7,7 @@
    body {
  margin:0;
  overflow-x:hidden;
- background:#666666;
+ background:black;
  }
  
 
@@ -55,7 +55,7 @@ section {
 }
 
 .tabs:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tabs:after {
@@ -76,10 +76,10 @@ section {
   content: '';
   display: block;
   position: absolute;
-  left: 89%;
-  top: 12%;
-  width: 40px;
-  height: 40px;
+  left: 90.3%;
+  top: 18%;
+  width: 35px;
+  height: 35px;
   margin-left: 0px;
   margin-top: 0px;
   background: #3f51b5;
@@ -89,7 +89,7 @@ section {
 }
 
 .settings:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple.2s ease-out;
 }
 
 .settings:after {
@@ -121,7 +121,7 @@ text-decoration:none;
 }
 
 .tab2:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab2:after {
@@ -152,7 +152,7 @@ text-decoration:none;
 }
 
 .tab3:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab3:after {
@@ -171,9 +171,9 @@ text-decoration:none;
   display: block;
   position: absolute;
   left: 0%;
-  top: 47.5%;
+  top: 47.7%;
   width: 360px;
-  height: 72px;
+  height: 70px;
   margin-left: 0px;
   margin-top: 0px;
   background: #3f51b5;
@@ -183,7 +183,7 @@ text-decoration:none;
 }
 
 .tab4:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab4:after {
@@ -202,9 +202,9 @@ text-decoration:none;
   display: block;
   position: absolute;
   left: 0%;
-  top: 60.5%;
+  top: 60.4%;
   width: 360px;
-  height: 72px;
+  height: 70px;
   margin-left: 0px;
   margin-top: 0px;
   background: #3f51b5;
@@ -214,7 +214,7 @@ text-decoration:none;
 }
 
 .tab5:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab5:after {
@@ -233,9 +233,9 @@ text-decoration:none;
   display: block;
   position: absolute;
   left: 0%;
-  top: 73.2%;
+  top: 73.1%;
   width: 360px;
-  height: 72px;
+  height: 70px;
   margin-left: 0px;
   margin-top: 0px;
   background: #3f51b5;
@@ -245,7 +245,7 @@ text-decoration:none;
 }
 
 .tab6:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple.5s ease-out;
 }
 
 .tab6:after {
@@ -264,9 +264,9 @@ text-decoration:none;
   display: block;
   position: absolute;
   left: 0%;
-  top: 86%;
+  top: 85.8%;
   width: 360px;
-  height: 72px;
+  height: 70px;
   margin-left: 0px;
   margin-top: 0px;
   background: #3f51b5;
@@ -276,7 +276,7 @@ text-decoration:none;
 }
 
 .tab7:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab7:after {
@@ -295,7 +295,7 @@ text-decoration:none;
   display: block;
   position: absolute;
   left: 0%;
-  top: 98.9%;
+  top: 98.2%;
   width: 360px;
   height: 72px;
   margin-left: 0px;
@@ -307,7 +307,7 @@ text-decoration:none;
 }
 
 .tab8:not(:active):after {
-  animation: ripple 1s ease-out;
+  animation: ripple .5s ease-out;
 }
 
 .tab8:after {
@@ -321,13 +321,35 @@ text-decoration:none;
 .tab8 {
 text-decoration:none;
 }
+.tfeatures {
+	color:grey;
+	margin-top:-55px;
+	font-weight:bold;
+	margin-left:80px;
+}
+.tfeatures:active {
+	color:black;
+}
+.tfeatures:clicked {
+	color:black
+}
+
+.tfeatures:after {
+	color:black;
+}
+.tfeatures:focused {
+	color:black;
+}
+.tfeatures:link {
+	color:black;
+}
 		</style>
 	</head>
 	<body>
 		<ul class="topbar">
 			<img width="30px" style="margin-top:13px;margin-left:10px;" height="30px" src="logoo.png" alt="logo" />
 
-	<a href="#" class="settings"><img  width="25px" height="25px" style="float:right;margin-top:16px;margin-right:5px;" src="ic_settingsw.png" alt="settings" /> 
+	<a href="preferences.html" class="settings"><img  width="25px" height="25px" style="float:right;margin-top:16px;margin-right:5px;" src="ic_settingsw.png" alt="settings" /> 
 	</a>
 
 			<hr style="margin-top:8px;border-color:#;" size="1" />
@@ -335,11 +357,12 @@ text-decoration:none;
 		</ul>
 		<div style="padding:20px;margin-top:30px;height:px;">
 			<!-- New Features -->
-		<a class="tabs" href="#"><section style="background:#111111;height:72px;left:0;right:0;width:360px;margin-left:-20px;margin-top:6px;">
+		<a class="tabs" href="nf.html"><section style="background:#111111;height:72px;left:0;right:0;width:360px;margin-left:-20px;margin-top:6px;">
 				<img src="img_new_chats_bubble.png" alt="New Features Button" style="margin-top:5px;margin-left:10px;" />
 
-				<p style="color:grey;margin-top:-55px;font-weight:bold;margin-left:80px;">Many New Features</p>
-				<p style="color:#3f51b5;margin-top:-10px;margin-left:80px;">For Version 2 Of Arcane Kik</p>
+				<p class="tfeatures">Many New Features</p>
+			
+				<p style="color:#3f51b5;margin-top:-10px;margin-left:80px;">Info Info Info Info</p>
 				<img src="ic_list_disclosure_arrow.png" alt="NewFeaturesArrow" style="float:right;margin-top:-50px;" />
 				</a>
 
@@ -348,8 +371,11 @@ text-decoration:none;
 					<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:5px;margin-left:10px;border-radius:50%;" />
 
 					<div style="margin-top:-20px;">
-						<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-						<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+						<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title</p>
+						
+						<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-28px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 						<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 						</a>
 						<!-- More -->
@@ -359,8 +385,10 @@ text-decoration:none;
 							<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 							<div style="margin-top:-20px;">
-								<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-								<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+								<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+								<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 								<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 								</a>
 								<!-- More -->
@@ -370,8 +398,10 @@ text-decoration:none;
 									<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 									<div style="margin-top:-20px;">
-										<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-										<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+										<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+										<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 										<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 										</a>
 										<!-- More -->
@@ -381,8 +411,10 @@ text-decoration:none;
 											<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 											<div style="margin-top:-20px;">
-												<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-												<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+												<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+												<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 												<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 												</a>
 												<!-- More -->
@@ -392,8 +424,10 @@ text-decoration:none;
 													<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 													<div style="margin-top:-20px;">
-														<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-														<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+														<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+														<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 														<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 														</a>
 														<!-- More -->
@@ -403,8 +437,10 @@ text-decoration:none;
 															<img src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 															<div style="margin-top:-20px;">
-																<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-																<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+																<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+																<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 																<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 																</a>
 																<!-- More -->
@@ -414,8 +450,10 @@ text-decoration:none;
 																	<img class="mdl-button mdl-js-button mdl-button--icon" src="arcanekikbois.png" alt="New Features Button" width="60px" height="60px" style="margin-top:0px;margin-left:10px;border-radius:50%;" />
 
 																	<div style="margin-top:-20px;">
-																		<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Arcanekik  bois (Dev C..</p>
-																		<p style="color:#a9adc1;margin-top:-10px;margin-left:80px;font-size:15px;">Contributors of ArcaneKik...</p>
+																		<p style="color:white;margin-top:-55px;margin-left:80px;font-size:17px;">Group Title 2018</p>
+													<img src="ic_read_receipt_read.png" alt="Receipt" style="margin-left:80px;margin-top:-20px;margin-bottom:10px;filter:invert(50%);">
+							
+						<p style="color:#a9adc1;margin-top:-30px;margin-left:95px;font-size:15px;">Extended Group Content...</p>
 																		<p style="float:right;margin-top:-58px;color:#a9adc1;font-size:15px;margin-right:10px;">Just Now</p>
 																		</a>
 																		
